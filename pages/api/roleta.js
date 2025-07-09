@@ -4,7 +4,7 @@ export default function handler(req, res) {
 
   const resultado =
     x < 75
-      ? `${sender}, nada aconteceu. Tenta de novo ai Ta?`
+      ? `${sender}, nada aconteceu. Tenta de novo ai Ta`
       : x < 88
       ? `/timeout ${sender} 300 Timeout de 5min pra ficar esperto kkkk`
       : x < 99
