@@ -3,12 +3,12 @@ export default function handler(req, res) {
 
   const resultado =
     x < 75
-      ? "Nada aconteceu, tenta denovo aí Ta"
+      ? "$(sender) Nada aconteceu, tenta denovo aí Ta"
       : x < 88
-      ? "Timeout de 5min pra ficar esperto kkkk"
+      ? "/timeout $(sender.name) 300 Timeout de 5min pra ficar esperto kkkk"
       : x < 99
-      ? "Timeout de 10min pra ficar esperto kkkk"
-      : "Toma ban";
+      ? "/timeout $(sender.name) 600 Timeout de 10min pra ficar esperto kkkk"
+      : "/ban $(sender.name) Toma ban, que sorte HAH kkkk ";
 
   res.status(200).send(resultado);
 }
