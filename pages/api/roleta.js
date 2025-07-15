@@ -4,19 +4,18 @@ export default function handler(req, res) {
 
   let resultado;
   
-  if(sender == "namiss2"){
-    resultado = `/timeout ${sender} 4 hi ${sender} kkkk`;
-  } else {
-
   resultado =
     x < 66
-      ? `${sender} nada aconteceu. Tenta de novo ai Ta ${x.toFixed(1)}`
+      ? `${sender} Nada aconteceu, vai tentar de novo ai? Ta`
       : x < 86
-      ? `/timeout ${sender} 1 Timeout de 5min pra ficar esperto kkkk ${x.toFixed(1)}`
+      ? `/timeout ${sender} 1 Timeout de 5min pra ficar esperto kkkk`
       : x < 99.5
-      ? `/timeout ${sender} 4 Timeout de 10min pra ficar esperto kkkk ${x.toFixed(1)}`
-      : `/ban ${sender} Toma ban, que sorte HAH kkkk ${x.toFixed(1)}`;
-  }
+      ? `/timeout ${sender} 4 Timeout de 10min pra ficar esperto kkkk`
+      : `/ban ${sender} Toma perma ban, que sorte HAH kkkk`;
   
+  if(sender == "namiss2" && x < 99.5){
+    resultado = `/timeout ${sender} 4 hi ${sender} kkkk rsrsrs`;
+  }
+
   res.status(200).send(resultado);
 }
