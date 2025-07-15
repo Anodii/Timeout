@@ -4,12 +4,12 @@ export default function handler(req, res) {
 
   const resultado =
     x < 75
-      ? `${sender}, nada aconteceu. Tenta de novo ai Ta`
+      ? `${sender}, nada aconteceu. Tenta de novo ai Ta ${x}`
       : x < 88
-      ? `/timeout ${sender} 300 Timeout de 5min pra ficar esperto kkkk`
+      ? `/timeout ${sender} 300 Timeout de 5min pra ficar esperto kkkk ${x}`
       : x < 99
-      ? `/timeout ${sender} 600 Timeout de 10min pra ficar esperto kkkk`
-      : `/ban ${sender} Toma ban, que sorte HAH kkkk`;
+      ? `/timeout ${sender} 600 Timeout de 10min pra ficar esperto kkkk ${x}`
+      : `/ban ${sender} Toma ban, que sorte HAH kkkk ${x}`;
 
   res.status(200).send(resultado);
 }
