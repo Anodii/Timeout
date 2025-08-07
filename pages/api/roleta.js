@@ -13,7 +13,7 @@ export default function handler(req, res) {
       ? `/timeout ${sender} 600 Timeout de 10min pra ficar esperto kkkk`
       : `/ban ${sender} Toma perma ban, que sorte HAH kkkk`;
 
-  if((sender == "grompinho" || sender == "lukasdelta_" || sender == "namiss2" || sender == "1Eduziiimm" || sender == "pompompuudin") && x < 99.9){
+  if((sender == "grompinho" || sender == "lukasdelta_" || sender == "namiss2" || sender == "1eduziiimm" || sender == "pompompuudin") && x < 99.9){
     resultado = `/timeout ${sender} 300 hi ${sender} kkkk rsrsrs`;
   } else
     if(sender == "guiven"){
